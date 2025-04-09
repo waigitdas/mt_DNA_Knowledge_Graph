@@ -5,16 +5,18 @@ This repository provides supplemental materials for the publication:
 **A Mitochondrial DNA Knowledge Graph**  
 By  
 **David A Stumpf, MD, PhD**  
-Professor Emeritus of (Neurology)  
+Professor Emeritus (Neurology)  
 Northwestern University Feinberg School of Medicine
 
-<a href="">Manuscript download</A>
-DOI: to follow 
-
+DOI: https://doi.org/10.21985/n2-fx1m-2m11   (manuscript download)
 
 ORCHID: <a href="https://orcid.org/0000-0002-5101-0693">0000-0002-5101-0693</a>
 
-dave@wai.md
+Correspndance: dave@wai.md
+
+Facebook: <a href="https://www.facebook.com/groups/2889479957920151">MitoNet</a>
+
+Released: April 9, 2025
 
 
 A collection of Neo4j Resources is at the <a href="https://doi.org/10.21985/n2-vf9z-cg74">Northwestern University Libraries ARCH server</a> 
