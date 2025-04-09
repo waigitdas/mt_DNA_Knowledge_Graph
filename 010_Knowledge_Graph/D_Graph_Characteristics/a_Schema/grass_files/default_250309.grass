@@ -1,0 +1,332 @@
+node {
+  diameter: 50px;
+  color: #ffffff;
+  border-color: #eb2728;
+  border-width: 2px;
+  text-color-internal: #000000;
+  font-size: 10px;
+}
+relationship {
+  color: ffffff;
+  shaft-width: 3px;
+  font-size: 12px;
+  padding: 3px;
+  text-color-external: #000000;
+  text-color-internal: #0;
+  caption: "<type>";
+  font-weight: bold;
+}
+node.probe {
+  defaultCaption: "<id>";
+  caption: "{variants}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #000000;
+  diameter: 80px;
+  font-weight: bold;
+}
+node.lookup_probe {
+  defaultCaption: "<id>";
+  caption: "{pid}                {ref_start_pos}|{test_len}|{seq_ct}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #000000;
+  diameter: 80px;
+  font-weight: bold;
+}
+node.haploprobe {
+  defaultCaption: "<id>";
+  caption: "{haploprobe}";
+  color: #F16667;
+  border-color: #000000;
+  diameter: 65px;
+  font-size: 24;
+  font-weight: bold;
+}
+node.block {
+  caption: "{name}";
+  color: #a93226;
+  border-color: #2870c2;
+  font-size: 12px;
+  text-color-internal: #FFFFFF;
+}
+node.mt_seq {
+  defaultCaption: "<id>";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+  caption: "{name}           {assigned_hg}        {haplocohere_hgs}";
+  diameter: 100px;
+}
+node.variant {
+  defaultCaption: "<id>";
+  color: #D9C8AE;
+  border-color: #c0a378;
+  text-color-internal: #2A2C34;
+  caption: "{name}";
+  diameter: 80px;
+  font-size: 14px;
+}
+node.dnode {
+  defaultCaption: "<id>";
+  color: #8033FF;
+  border-color: #2870c2;
+  font-size: 16px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}             {seq_ct}";
+  diameter: 80px;
+}
+relationship.dnode_child {
+  defaultCaption: "<id>";
+  caption: "<type>";
+  color: #8033FF;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 80px;
+}
+relationship.dnode_parent {
+  caption: "<type>";
+  color: #8033FF;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+relationship.block_dnode {
+  defaultCaption: "<id>";
+  caption: "{classification}";
+  color: #8033FF;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 80px;
+}
+relationship.probe_variant {
+  defaultCaption: "<id>";
+  caption: "{classification}     {method}";
+  color: #D9C8AE;
+  border-color: #c0a378;
+  text-color-internal: #2A2C34;
+  diameter: 80px;
+}
+relationship.probe_dnode {
+  defaultCaption: "<id>";
+  caption: "{variant}";
+  font-size: 16px;
+  color: #8033FF;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 80px;
+}
+relationship.dnode_variant {
+  defaultCaption: "<id>";
+  caption: "{classification}";
+  color: #8033FF;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 80px;
+}
+relationship.block_variant {
+  defaultCaption: "<id>";
+  caption: "{classification}";
+  color: #a93226;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 80px;
+}
+relationship.block_child {
+  defaultCaption: "<id>";
+  caption: "{classification}";
+  color: #a93226;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 80px;
+}
+relationship.seq_probe {
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+}
+relationship.seq_dnode {
+  caption: "{type}";
+  color: #8033FF;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 80px;
+}
+node.probe_pattern {
+  defaultCaption: "<id>";
+  color: #58b1f3;
+  border-color: #423204;
+  text-color-internal: #FFFFFF;
+}
+relationship.block_probe_pattern {
+  defaultCaption: "<id>";
+  color: #58b1f3;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+  caption: "{name}";
+}
+relationship.dnode_probe_pattern {
+  defaultCaption: "<id>";
+  color: #58b1f3;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+  caption: "{name}";
+}
+relationship.probe_child {
+  defaultCaption: "<id>";
+  color: #F16667;
+  border-color: #eb2728;
+  font-size: 12px;
+  text-color-internal: #000000;
+  caption: "{name}";
+}
+node.anode {
+  defaultCaption: "<id>";
+  color: #4C8EDA;
+  border-color: #5db665;
+  text-color-internal: #ffffff;
+  caption: "{ici}    {hgs}";
+  diameter: 120px;
+  font-weigh: bold;
+}
+relationship.anode_child {
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+}
+relationship.anode_block {
+  color: #ECB5C9;
+  border-color: #da7298;
+  text-color-internal: #2A2C34;
+}
+node.haplocohere {
+  caption: "{hg_common_anc}                 {hgs}";
+  color: green;
+  border-color: #5db665;
+  text-color-internal: #ffffff;
+  diameter: 80px;
+  font-weight: bold;
+  font-size: 12px;
+}
+relationship.seq_haplocohere {
+  defaultCaption: "<id>";
+  color: green;
+  border-color: #eb2728;
+  text-color-internal: #000000;
+}
+relationship.dnode_haplocohere {
+  defaultCaption: "<id>";
+  color: green;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+relationship.probe_haplocohere {
+  defaultCaption: "<id>";
+  text-color-internal: #FFFFFF;
+}
+node.hc_path {
+  caption: "{path}";
+  color: orange;
+  border-color: #5db665;
+  text-color-internal: #000000;
+  diameter: 80px;
+  font-weight: bold;
+  font-size: 12px;
+}
+relationship.shared_haplocohere {
+  defaultCaption: "<id>";
+  color: green;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+relationship.shared_haplogroup {
+  defaultCaption: "<id>";
+  color: #5d58f3;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+relationship.anode_dnode {
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+}
+relationship.anode_parentborder-color:#5db665;text-color-internal:#2A2C34; {
+}
+relationship.seq_anode {
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+}
+relationship.probe_anode {
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+}
+relationship.anode_parent {
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+}
+relationship.hc_path_intersect {
+  color: orange;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+}
+relationship.common_paths {
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+}
+node.anode_path {
+  defaultCaption: "<id>";
+  color: lightgreen;
+  border-color: #5db665;
+  text-color-internal: #000000;
+  caption: "{path}";
+  diameter: 80px;
+  font-weigh: bold;
+}
+node.community {
+  defaultCaption: "<id>";
+  color: #604A0E;
+  border-color: #423204;
+  text-color-internal: #FFFFFF;
+  caption: "{cid}";
+}
+relationship.rici_child {
+  color: #569480;
+  border-color: #447666;
+  text-color-internal: #FFFFFF;
+  shaft-width: 2px;
+}
+node.Converged {
+  defaultCaption: "<id>";
+  color: #8DCC93;
+  border-color: #5db665;
+}
+node.HighlyConverged {
+  caption: "{cid}";
+  color: brown;
+  border-color: #eb2728;
+  text-color-internal: white;
+  font-size: 24px;
+  diameter: 120px;
+}
+node.fused_probe {
+  defaultCaption: "<id>";
+  color: #DA7194;
+  border-color: #cc3c6c;
+  text-color-internal: #FFFFFF;
+  diameter: 65px;
+  caption: "{pid}";
+}
+node.Haplogroup {
+  caption: "{name}";
+}
+node.haplogroup {
+  defaultCaption: "<id>";
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+  diameter: 80px;
+  caption: "{name}";
+}
